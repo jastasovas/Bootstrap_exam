@@ -16,6 +16,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -24,11 +25,31 @@
       class="page-header-image fixed-top d-flex justify-content-between"
       style="background-image: url(/images/plant.jpg)"
     >
-      <div class="d-flex flex-row align-items-center gap-4 p-3">
+      <div class="d-flex flex-row align-items-center gap-4 p-3 text-primary">
         <h1>Valgykla</h1>
         <h4>Home</h4>
         <h4>Dienos pietūs</h4>
-        <h4>Meniu</h4>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/meniu.html"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Meniu
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="/meniu.html">Dienos pietūs</a>
+              </li>
+              <li><a class="dropdown-item" href="">Mūsų šefai</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Susisiekti</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="d-flex flex-row align-items-center gap-1 p-3">
         <input type="text" placeholder="Search" />
@@ -92,105 +113,112 @@
 
       <section class="row pt-sm-5 d-flex justify-content-center">
         <h1 class="h1 text-center mb-3 pt-sm-5">Dienos pietūs</h1>
-        <div class="col-10 d-flex justify-content-center">
-          <div class="card" style="width: 18rem">
-            <img src="/images/1.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patiekalas Nr. X</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                autem ducimus quod, vitae, esse officia omnis voluptates minus
-                repellat perspiciatis velit ullam, corporis accusantium
-                voluptatem! Praesentium recusandae ipsum nesciunt eius.
-              </p>
-              <div class="d-flex justify-content-between">
-                <h5>7,5&#8364;</h5>
-                <a href="#" class="btn btn-primary">Order</a>
+        <div class="row col-10 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="/images/day.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Patiekalas Nr. X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias commodi reprehenderit temporibus laboriosam? Nisi
+                  atque obcaecati, labore architecto id saepe perferendis sed,
+                  veritatis ipsum pariatur optio mollitia, vel iste quod.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5>7,5&#8364;</h5>
+                  <a href="#" class="btn btn-primary">Order</a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="/images/2.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patiekalas Nr. X</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                autem ducimus quod, vitae, esse officia omnis voluptates minus
-                repellat perspiciatis velit ullam, corporis accusantium
-                voluptatem! Praesentium recusandae ipsum nesciunt eius.
-              </p>
-              <div class="d-flex justify-content-between">
-                <h5>7,5&#8364;</h5>
-                <a href="#" class="btn btn-primary">Order</a>
+          <div class="col">
+            <div class="card">
+              <img src="/images/day.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Patiekalas Nr. X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias commodi reprehenderit temporibus laboriosam? Nisi
+                  atque obcaecati, labore architecto id saepe perferendis sed,
+                  veritatis ipsum pariatur optio mollitia, vel iste quod.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5>8&#8364;</h5>
+                  <a href="#" class="btn btn-primary">Order</a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="/images/3.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patiekalas Nr. X</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                autem ducimus quod, vitae, esse officia omnis voluptates minus
-                repellat perspiciatis velit ullam, corporis accusantium
-                voluptatem! Praesentium recusandae ipsum nesciunt eius.
-              </p>
-              <div class="d-flex justify-content-between">
-                <h5>7,5&#8364;</h5>
-                <a href="#" class="btn btn-primary">Order</a>
+          <div class="col">
+            <div class="card">
+              <img src="/images/day.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Patiekalas Nr. X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias commodi reprehenderit temporibus laboriosam? Nisi
+                  atque obcaecati, labore architecto id saepe perferendis sed,
+                  veritatis ipsum pariatur optio mollitia, vel iste quod.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5>8,99&#8364;</h5>
+                  <a href="#" class="btn btn-primary">Order</a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="/images/4.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patiekalas Nr. X</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                autem ducimus quod, vitae, esse officia omnis voluptates minus
-                repellat perspiciatis velit ullam, corporis accusantium
-                voluptatem! Praesentium recusandae ipsum nesciunt eius.
-              </p>
-              <div class="d-flex justify-content-between">
-                <h5>7,5&#8364;</h5>
-                <a href="#" class="btn btn-primary">Order</a>
+          <div class="col">
+            <div class="card">
+              <img src="/images/day.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Patiekalas Nr. X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias commodi reprehenderit temporibus laboriosam? Nisi
+                  atque obcaecati, labore architecto id saepe perferendis sed,
+                  veritatis ipsum pariatur optio mollitia, vel iste quod.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5>5,5&#8364;</h5>
+                  <a href="#" class="btn btn-primary">Order</a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="/images/7.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patiekalas Nr. X</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                autem ducimus quod, vitae, esse officia omnis voluptates minus
-                repellat perspiciatis velit ullam, corporis accusantium
-                voluptatem! Praesentium recusandae ipsum nesciunt eius.
-              </p>
-              <div class="d-flex justify-content-between">
-                <h5>7,5&#8364;</h5>
-                <a href="#" class="btn btn-primary">Order</a>
+          <div class="col">
+            <div class="card">
+              <img src="/images/day.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Patiekalas Nr. X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias commodi reprehenderit temporibus laboriosam? Nisi
+                  atque obcaecati, labore architecto id saepe perferendis sed,
+                  veritatis ipsum pariatur optio mollitia, vel iste quod.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5>12,99&#8364;</h5>
+                  <a href="#" class="btn btn-primary">Order</a>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="card" style="width: 18rem">
-            <img src="/images/6.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Patiekalas Nr. X</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-                autem ducimus quod, vitae, esse officia omnis voluptates minus
-                repellat perspiciatis velit ullam, corporis accusantium
-                voluptatem! Praesentium recusandae ipsum nesciunt eius.
-              </p>
-              <div class="d-flex justify-content-between">
-                <h5>7,5&#8364;</h5>
-                <a href="#" class="btn btn-primary">Order</a>
+          <div class="col">
+            <div class="card">
+              <img src="/images/day.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Patiekalas Nr. X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias commodi reprehenderit temporibus laboriosam? Nisi
+                  atque obcaecati, labore architecto id saepe perferendis sed,
+                  veritatis ipsum pariatur optio mollitia, vel iste quod.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <h5>18&#8364;</h5>
+                  <a href="#" class="btn btn-primary">Order</a>
+                </div>
               </div>
             </div>
           </div>
@@ -515,7 +543,7 @@
       </section>
     </main>
     <footer
-      class="page-footer-image d-flex justify-content-center align-items-center justify-content-sm-between flex-column mt-4 mb-4 flex-sm-row"
+      class="page-footer-image d-flex justify-content-center align-items-center justify-content-sm-between flex-column mt-4 mb-4 flex-sm-row text-primary"
       style="background-image: url(/images/plant.jpg)"
     >
       <div class="mb-5 mt-5 m-5">
